@@ -1,8 +1,12 @@
 site_name: Learn Arduino
+site_url: https://www.patashale.in/learn-arduino/
+site_author: Patashale™
+site_description: Learn Arduino here to build appliances for the real world.
 repo_url: https://github.com/patashale/learn-arduino
 repo_name: patashale/learn-arduino
 theme:
   name: material
+  favicon: assets/favicon.png
   language: en
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -41,6 +45,23 @@ extra:
     - icon: fontawesome/brands/mastodon
       link: https://fosstodon.org/@patashale
       name: Patashale™ on Fosstodon
+    - icon: fontawesome/brands/youtube
+      link: https://youtube.com/@patashale
+      name: Patashale™ on YouTube
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+  - social:
+      cards_layout_options:
+        background_color: "#008184"
 
 nav:
   - Know before you start: index.md
